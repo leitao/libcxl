@@ -55,6 +55,7 @@ install: all
 	mkdir -p $(DESTDIR)$(includedir)
 	install -m 0755 $(LIBNAME) $(DESTDIR)$(libdir)/
 	cp -d libcxl.so $(DESTDIR)$(libdir)/
+	cp -d libcxl.a $(LIBSONAME) $(DESTDIR)$(libdir)/
 	install -m 0644 libcxl.h  $(DESTDIR)$(includedir)/
 
 .PHONY: clean all install
